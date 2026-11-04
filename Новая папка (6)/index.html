@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <header class="header"> 
+        <div class="logo">Нержвеющие генеталии</div> 
+        <nav class="nav"> 
+            <a>Католог</a> 
+            <a>О нас</a> 
+            <a>Контакты</a> 
+        </nav> 
+        <button class="btn-info">интересный сайт</button> 
+    </header> 
+ 
+    <main class="main"> 
+        <div class="zagalovok"> 
+            <h1 class="zagalovok">Всё для релакса</h1> 
+            <p class="podzagolovock">Выберите то что нравится в катологе ниже</p> 
+        </div> 
+ 
+        <section class="knopki"> 
+            <div class="filters"> 
+                <button class="filter-btn active" data-category="Все">Все</button> 
+                <button class="filter-btn" data-category="мужчины">мужчины</button> 
+                <button class="filter-btn" data-category="женщины">женщины</button> 
+                <button class="filter-btn" data-category="Аксессуары">Аксессуары</button> 
+            </div> 
+            <input type="text" id="search-input" class="search-input" placeholder="Поиск по названию"> 
+        </section> 
+ 
+        <div class="layout-wrapper"> 
+            <section class="catalog"> 
+                <div class="products-grid" id="products-grid">  
+                   <!-- Сюда JS вставит карточки --> 
+                </div> 
+            </section> 
+ 
+            <div class="cart-sidebar"> 
+                <h2>Ваша корзина</h2> 
+ 
+                <div id="cart-items"> 
+ 
+                </div> 
+ 
+                <div class="cart-summary"> 
+                    <span>Итого</span> 
+                    <span id="cart-total">0</span> 
+                </div> 
+ 
+            </div> 
+        </div> 
+    </main> 
+    <script src="script.js"></script> 
+</body> 
+</html> 
